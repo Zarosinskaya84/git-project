@@ -24,9 +24,6 @@ a {
   color: #ffffff;
 }
 
-
-
-
 .btn {
   height: 60px;
   font-size: 1.125rem;
@@ -53,8 +50,6 @@ a {
 .btn:focus {
   background-color: #d66926;
 }
-
-
 
 .header {
   position: relative;
@@ -308,6 +303,4 @@ a {
   .skills__container {
     grid-auto-rows: calc(230px - 13.333333px);
   }
-
-
-
+}

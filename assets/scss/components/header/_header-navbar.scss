@@ -1,4 +1,4 @@
-
+@use "../../presets" as *;
 .header-navbar {
   &__btn {
     display: none;
@@ -12,14 +12,14 @@
 
     list-style: none;
 
-    gap: 20px;
+    gap: $gap;
     grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
   }
 
   &__link {
     display: block;
 
-    padding: 20px 10px;
+    padding: $gap 10px;
 
     transition: color 0.25s;
 

@@ -1,8 +1,9 @@
+@use "../../../presets" as *;
 .skills {
   &__container {
     display: grid;
 
-    margin-bottom: 20px;
+    margin-bottom: $gap;
   }
   &__actions {
     display: flex;

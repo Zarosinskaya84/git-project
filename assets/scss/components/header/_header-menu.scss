@@ -1,3 +1,5 @@
+@use "../../presets/variables" as *;
+@use "../../mixins/extends" as *;
 .header-menu {
   position: absolute;
   z-index: 2;
@@ -10,7 +12,7 @@
     align-items: center;
 
     @extend %container;
-    gap: 20px;
+    gap: $gap;
     grid-template-columns: auto 1fr;
   }
 }

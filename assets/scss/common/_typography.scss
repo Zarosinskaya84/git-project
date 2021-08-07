@@ -1,3 +1,6 @@
+@use "../presets/skin" as *;
+@use "../presets/variables" as *;
+
 *,
 * ::before,
 * ::after {
@@ -11,14 +14,14 @@ html {
 
   color: $color-gray;
 
-  font-family: "Roboto", sans-serif;
+  font-family: $font-main;
   font-size: 16px;
 }
 h1 {
   text-align: center;
   letter-spacing: 0.08em;
 
-  font-family: "Roboto Slab", serif;
+  font-family: $font-header;
   font-weight: 300;
   line-height: 1.2em;
 }

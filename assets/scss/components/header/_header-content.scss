@@ -5,6 +5,16 @@
 
   position: relative;
   z-index: 1;
+  
+  @media (min-width: 992px){
+   
+      margin: 0 0 53px;
+    }
+    @media (max-width: 991px) and (min-width: 768px) {
+ 
+        margin: 0 0 43px;
+      }
+      
 
   &__actions {
     display: flex;
@@ -17,9 +27,11 @@
     @extend %container;
     
   }
+
+  &__title {
+    @media (max-width: 767px) {
+      margin: 0 0 33px;
+      
 }
-
-
-
-
-
+}
+}

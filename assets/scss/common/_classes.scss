@@ -38,9 +38,17 @@
 }
 
 .btn--primary {
-  min-width: 350px;
   height: 60px;
   font-size: 1.125rem;
+  
+    @include sm-min {
+      min-width:350px;
+    }
+    @include sm {
+      width: 100%;
+
+    }
+  
 
   border: 2px solid $color-primary;
   background-color: rgba($color-primary, 0.8);

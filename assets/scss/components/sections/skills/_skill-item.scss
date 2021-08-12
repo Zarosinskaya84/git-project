@@ -1,4 +1,5 @@
 @use "../../../presets" as *;
+@use "../../../mixins" as *;
 .skill-item {
   position: relative;
 
@@ -33,7 +34,14 @@
     padding: $gap;
 
     transition: color 0.5s;
+    @include md-min {
+      font-size: 1.25rem;
+    }
+    @include md{
+      font-size: 1.125rem;
+    }
   }
+
   &__image {
     position: absolute;
 

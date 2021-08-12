@@ -397,27 +397,26 @@ a {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 60px;
   padding-right: 1em;
   padding-left: 1em;
   -webkit-transition: color 0.5s;
   -o-transition: color 0.5s;
   transition: color 0.5s;
   letter-spacing: 0.1em;
-  font-size: 1.125rem;
 }
 .btn:hover, .btn:focus {
   background-color: #d66926;
 }
 
 .btn--light {
-  min-width: 250px;
   border: 2px solid #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
 .btn--primary {
   min-width: 350px;
+  height: 60px;
+  font-size: 1.125rem;
   border: 2px solid #2d3651;
   background-color: rgba(45, 54, 81, 0.8);
 }
@@ -649,6 +648,11 @@ a {
   h1 {
     font-size: 3.75rem;
   }
+  .btn--light {
+    min-width: 250px;
+    height: 60px;
+    font-size: 1.125rem;
+  }
   .header-content__title {
     margin: 0 0 53px;
   }
@@ -663,6 +667,10 @@ a {
   h1 {
     font-size: 2.5rem;
   }
+  .btn--light {
+    min-width: 200px;
+    height: 50px;
+  }
   .header-content__title {
     margin: 0 0 43px;
   }
@@ -676,6 +684,10 @@ a {
 @media (max-width: 767.8px) {
   h1 {
     font-size: 1.875rem;
+  }
+  .btn--light {
+    min-width: 170px;
+    height: 40px;
   }
   .header-content__title {
     margin: 0 0 33px;

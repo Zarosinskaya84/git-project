@@ -1,17 +1,16 @@
 @use "../presets/skin" as *;
+@use "../mixins" as *;
 .btn {
   display: flex;
   align-items: center;
   justify-content: center;
 
-  height: 60px;
   padding-right: 1em;
   padding-left: 1em;
 
   transition: color 0.5s;
   letter-spacing: 0.1em;
 
-  font-size: 1.125rem;
 
   &:hover,
   &:focus {
@@ -19,15 +18,30 @@
   }
 }
 .btn--light {
-  min-width: 250px;
+  @include lg-min{
+    min-width: 250px;
+    height: 60px;
+    font-size: 1.125rem;
 
+  }
+  @include lg-md{
+    min-width: 200px;
+    height: 50px;
+  }
+  @include md{
+    min-width: 170px;
+    height: 40px;
+  }
+  
   border: 2px solid $color-light;
   background-color: rgba($color-light, 0.1);
 }
 
 .btn--primary {
   min-width: 350px;
+  height: 60px;
+  font-size: 1.125rem;
 
   border: 2px solid $color-primary;
-  background-color: rgba($color-primary,0.8);
+  background-color: rgba($color-primary, 0.8);
 }

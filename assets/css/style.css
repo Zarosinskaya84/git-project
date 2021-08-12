@@ -638,9 +638,6 @@ a {
     margin-bottom: 30px;
     padding: 10px;
   }
-  .skills__actions .btn--primary {
-    min-width: 350px;
-  }
 }
 
 @media (min-height: 691px) {

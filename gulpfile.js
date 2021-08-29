@@ -65,6 +65,7 @@ async function sync() {
 function watchFiles() {
   syncInit();
   watch(PATH.scssFiles, series(scss));
+  // watch(PATH.scssFiles, series(scssDev));
   watch(PATH.htmlFiles, sync);
   watch(PATH.jsFiles, sync);
   // watch(PATH.cssFiles, sync);

@@ -17,12 +17,12 @@
     }
   }
   &__title {
-    position: absolute;
+    @include abs-position;
     z-index: 1;
 
     margin: 0;
 
-    inset: 0;
+    
   }
   &__link {
     display: flex;
@@ -43,7 +43,7 @@
   }
 
   &__image {
-    position: absolute;
+    @include abs-position;
 
     transition: transform 0.5s;
 
@@ -51,17 +51,17 @@
     background-position: center;
     background-size: cover;
 
-    inset: 0;
+    
   }
   &__overlay {
-    position: absolute;
+    @include abs-position;;
 
     transition: opacity 0.5s;
 
     opacity: 0.8;
     background-color: #2d3651;
 
-    inset: 0;
+   
   }
 }
 @for $i from 1 through 9 {

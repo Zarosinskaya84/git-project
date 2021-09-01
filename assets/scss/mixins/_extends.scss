@@ -1,5 +1,6 @@
 @use "../presets" as *;
 @use "../mixins/mixins-media" as *;
+
 %container {
   max-width: 1340px;
   margin: auto;
@@ -7,4 +8,38 @@
   padding-left: 20px;
 
   font-size: 1.125rem;
+}
+%section {
+  @include lg-min {
+    padding-top: $gap-x5;
+    padding-bottom: $gap-x5;
+  }
+  @include lg-md {
+    padding-top: $gap-x4;
+    padding-bottom: $gap-x4;
+  }
+  @include md {
+    padding-top: $gap-x3;
+    padding-bottom: $gap-x3;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+}
+
+%btn-container {
+  @include sm-min {
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn--primary {
+    @include sm-min {
+      min-width: 350px;
+    }
+    @include sm {
+      width: 100%;
+    }
+  }
 }

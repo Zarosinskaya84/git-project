@@ -7,7 +7,7 @@
 
   &:hover {
     .skill-item__link {
-      color: #d66926;
+      color: $color-accent;
     }
     .skill-item__image {
       transform: scale(1.1);
@@ -21,7 +21,8 @@
     z-index: 1;
 
     margin: 0;
-
+    letter-spacing: 0.1em;
+    // font-size: 1.25rem;    
     
   }
   &__link {
@@ -34,11 +35,18 @@
     padding: $gap;
 
     transition: color 0.5s;
+
     @include md-min {
       font-size: 1.25rem;
+      letter-spacing: 0.1em;
+     
+      
     }
     @include md{
       font-size: 1.125rem;
+      letter-spacing: 0.1em;
+    
+      
     }
   }
 
@@ -47,7 +55,7 @@
 
     transition: transform 0.5s;
 
-    background-color: #2d3651;
+    background-color: $color-primary;
     background-position: center;
     background-size: cover;
 
@@ -59,7 +67,7 @@
     transition: opacity 0.5s;
 
     opacity: 0.8;
-    background-color: #2d3651;
+    background-color: $color-primary;
 
    
   }

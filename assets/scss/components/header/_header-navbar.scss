@@ -2,6 +2,7 @@
 @use "../../mixins" as *;
 
 .header-navbar {
+  letter-spacing: 0.1em;
 
   &__btn {
     @include md-min {

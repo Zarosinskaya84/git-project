@@ -31,6 +31,8 @@
   @include md{
     min-width: 170px;
     height: 40px;
+    letter-spacing: 0.05em;
+    font-size: 1rem;
   }
   
   border: 2px solid $color-light;
@@ -41,13 +43,14 @@
   height: 60px;
   font-size: 1.125rem;
   
-    @include sm-min {
-      min-width:350px;
-    }
-    @include sm {
-      width: 100%;
+  
+    // @include sm-min {
+    //   min-width:350px;
+    // }
+    // @include sm {
+    //   width: 100%;
 
-    }
+    // }
   
 
   border: 2px solid $color-primary;

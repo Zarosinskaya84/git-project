@@ -89,9 +89,11 @@
     align-content: center;
 
     padding: $gap;
-    font-family: $font-header;
-       font-size: 15px;
-       letter-spacing: 0.1px;
+    // font-family: $font-header;
+      
+    //    letter-spacing: 0.01px;
+    //   font-family: "Roboto", sans-serif;
+    //   font-size: 16px;
 
     h3 {
       transition: color 0.5s;
@@ -104,6 +106,8 @@
     p {
       transition: color 0.5s;
       text-align: center;
+      
+     
       
     }
   }

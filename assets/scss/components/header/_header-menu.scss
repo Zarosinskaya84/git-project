@@ -18,10 +18,11 @@
 
   &__container {
     display: grid;
-    align-items: center;
+   
 
-    @extend %container;
     gap: $gap;
     grid-template-columns: auto 1fr;
+    align-items: center;
+    @extend %container;
   }
 }
